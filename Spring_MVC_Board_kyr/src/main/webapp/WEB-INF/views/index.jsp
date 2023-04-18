@@ -27,6 +27,7 @@
 		<h3><a href="FreeBoardList.bo2">자유게시판</a></h3>
 		<hr>
 		<h3>kyr 추가 </h3>
+		<h3>kyr 추가 2222222</h3>
 	</article>
 </body>
 </html>
