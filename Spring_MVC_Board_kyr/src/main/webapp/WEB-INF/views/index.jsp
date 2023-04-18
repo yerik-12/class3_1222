@@ -27,13 +27,10 @@
 		<h3><a href="FreeBoardList.bo2">자유게시판</a></h3>
 		<hr>
 
-=======
+
 		<h3>kyr 추가 </h3>
 		<h3>kyr 추가 2222222</h3>
->>>>>>> branch 'master' of https://github.com/yerik-12/class3_1222.git
-=======
->>>>>>> refs/remotes/origin/yeriii
->>>>>>> branch 'master' of https://github.com/yerik-12/class3_1222.git
+
 	</article>
 </body>
 </html>
