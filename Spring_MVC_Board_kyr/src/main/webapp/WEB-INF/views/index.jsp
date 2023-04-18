@@ -26,9 +26,7 @@
 		<hr>
 		<h3><a href="FreeBoardList.bo2">자유게시판</a></h3>
 		<hr>
-
 		<h3>spring 수정</h3>
-<<<<<<< master
 <<<<<<< HEAD
 =======
 <<<<<<< master
@@ -49,9 +47,6 @@
 
 >>>>>>> 01cb3be 리버트전
 >>>>>>> branch 'master' of https://github.com/yerik-12/class3_1222.git
-=======
-
->>>>>>> c41f2d1 spring 이 추가 - Revert 확인용
 	</article>
 </body>
 </html>
