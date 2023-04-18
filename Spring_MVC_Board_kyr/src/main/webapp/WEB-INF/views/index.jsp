@@ -28,7 +28,12 @@
 		<hr>
 
 		<h3>spring 수정</h3>
+<<<<<<< HEAD
+		<h3>spring 추가함</h3>
+=======
+		<h3>spring 이 추가함</h3>
 		
+>>>>>>> branch 'master' of https://github.com/yerik-12/class3_1222.git
 
 	</article>
 </body>
