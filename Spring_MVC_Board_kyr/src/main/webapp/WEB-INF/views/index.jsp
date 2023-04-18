@@ -28,8 +28,11 @@
 		<hr>
 		<h3>spring 수정</h3>
 <<<<<<< master
+<<<<<<< master
 		<h3>spring 이 추가 - Revert 확인용</h3>
 =======
+=======
+>>>>>>> 01cb3be 리버트전
 <<<<<<< HEAD
 		<h3>spring 추가함</h3>
 =======
