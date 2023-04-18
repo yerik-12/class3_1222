@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itwillbs.spring_mvc_board_kyr.mapper.MemberMapper">
+
+	<!-- 회원 가입 - INSERT -->
+	<!-- 회원번호(idx)는 자동 증가이므로 null 전달, 인증상태(auth_status)는 'N' 문자 전달 -->
+	<!-- 이메일(email)은 email1, email2 파라미터를 문자열 결합을 통해 저장 - MySQL 의 CONCAT() 함수 사용 -->
+	<insert id="insertMember">
+		INSERT
+			INTO member
+			VALUES (
+				null,
+				#{name},
+				#{id},
+				#{passwd}, -- 암호문
+<!-- 				#{email}, -->
+				CONCAT(#{email1}, '@', #{email2}), -- email 문자열 결합
+				#{gender},
+				now(),
+				'N'
+			)
+	</insert>
+	
+	<select id="selectPasswd" resultType="string">
+		
+		SELECT passwd FROM member 
+		WHERE id = #{id} 
+	
+	</select>
+	
+	<select id="selectMemberInfo" resultType="com.itwillbs.spring_mvc_board_kyr.vo.MemberVO">
+		
+		SELECT * FROM member 
+		WHERE id = #{id} 
+	
+	</select>
+	
+	<!--SQL 구문을 다르게 실행 할수 있도록 해야함 SQL기능중 단일if문을 사용하여 실행할 문장을 조건에 따라 실행여부를 결정가능  
+		<if test="조건식"> 조건식 결과가 true일때 실행할 쿼리</if>
+	-->
+	
+	
+	<update id="updateMemberInfo">
+		UPDATE member 
+			SET name=#{member.name}
+			, gender =#{member.gender}
+			, email=CONCAT(#{member.email1},'@',#{member.email2})
+			<if test="newPasswd neq ''">
+			, passwd = #{newPasswd}
+			</if>
+			WHERE 
+				id = #{member.id}
+			 
+	
+	</update>
+	
+	<delete id="deleteMember">
+		DELETE FROM member WHERE id = #{id}
+	
+	
+	</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
