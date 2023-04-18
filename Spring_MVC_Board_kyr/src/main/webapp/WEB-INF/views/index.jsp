@@ -15,6 +15,7 @@
 		<jsp:include page="inc/top.jsp"></jsp:include>
 	</header>
 	<article id="main">
+		<h3>test가 추가함</h3>
 		<h1>MVC 게시판 프로젝트</h1>
 		<%-- 하이퍼링크 생성 --%>
 		<%-- 1) 글쓰기 -> BoardWriteForm.bo --%>
@@ -27,7 +28,12 @@
 		<hr>
 
 		<h3>spring 수정</h3>
+<<<<<<< HEAD
 		<h3>spring 추가함</h3>
+=======
+		<h3>spring 이 추가함</h3>
+		
+>>>>>>> branch 'master' of https://github.com/yerik-12/class3_1222.git
 
 	</article>
 </body>
